@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjimon | Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌐 Tarjimon</h1>
+        <p class="subtitle">Matningizni istalgan tilga tarjima qiling</p>
+
+        <div class="translator">
+
+            <!-- Yuqori qism -->
+            <div class="language-box">
+
+                <select id="fromLanguage">
+                    <option value="uz">🇺🇿 O'zbekcha</option>
+                    <option value="en">🇬🇧 Inglizcha</option>
+                    <option value="ru">🇷🇺 Ruscha</option>
+                    <option value="tr">🇹🇷 Turkcha</option>
+                    <option value="de">🇩🇪 Nemischa</option>
+                    <option value="fr">🇫🇷 Fransuzcha</option>
+                    <option value="es">🇪🇸 Ispancha</option>
+                    <option value="it">🇮🇹 Italyancha</option>
+                    <option value="pt">🇵🇹 Portugalcha</option>
+                    <option value="ar">🇸🇦 Arabcha</option>
+                    <option value="zh">🇨🇳 Xitoycha</option>
+                    <option value="ja">🇯🇵 Yaponcha</option>
+                    <option value="ko">🇰🇷 Koreyscha</option>
+                    <option value="hi">🇮🇳 Hindcha</option>
+                </select>
+
+                <button id="swapBtn" title="Tillarni almashtirish">
+                    ⇄
+                </button>
+
+                <select id="toLanguage">
+                    <option value="en">🇬🇧 Inglizcha</option>
+                    <option value="uz">🇺🇿 O'zbekcha</option>
+                    <option value="ru">🇷🇺 Ruscha</option>
+                    <option value="tr">🇹🇷 Turkcha</option>
+                    <option value="de">🇩🇪 Nemischa</option>
+                    <option value="fr">🇫🇷 Fransuzcha</option>
+                    <option value="es">🇪🇸 Ispancha</option>
+                    <option value="it">🇮🇹 Italyancha</option>
+                    <option value="pt">🇵🇹 Portugalcha</option>
+                    <option value="ar">🇸🇦 Arabcha</option>
+                    <option value="zh">🇨🇳 Xitoycha</option>
+                    <option value="ja">🇯🇵 Yaponcha</option>
+                    <option value="ko">🇰🇷 Koreyscha</option>
+                    <option value="hi">🇮🇳 Hindcha</option>
+                </select>
+
+            </div>
+
+            <!-- Matnlar -->
+            <div class="text-area">
+
+                <div class="input-box">
+                    <textarea
+                        id="inputText"
+                        placeholder="Tarjima qilinadigan matnni yozing..."
+                    ></textarea>
+
+                    <div class="counter">
+                        <span id="charCount">0</span> / 5000
+                    </div>
+                </div>
+
+                <div class="output-box">
+                    <textarea
+                        id="outputText"
+                        placeholder="Tarjima shu yerda chiqadi..."
+                        readonly
+                    ></textarea>
+                </div>
+
+            </div>
+
+            <!-- Tugmalar -->
+            <div class="buttons">
+
+                <button id="clearBtn" class="clear">
+                    🗑 Tozalash
+                </button>
+
+                <button id="translateBtn" class="translate">
+                    🌐 Tarjima qilish
+                </button>
+
+                <button id="copyBtn" class="copy">
+                    📋 Nusxalash
+                </button>
+
+            </div>
+
+            <div id="status"></div>
+
+        </div>
+
+        <footer>
+            © 2026 My Translator
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
